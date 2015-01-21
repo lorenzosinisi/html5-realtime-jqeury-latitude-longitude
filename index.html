@@ -27,24 +27,18 @@
             }
         }
         function handle_geolocation_query(position){
-
 		        var longitudediv = jQuery('.longitude');
-				var lattitudediv = jQuery('.lattitude');
-				latitude = position.coords.latitude;
-			    longitude  = position.coords.longitude;
-			 
-			    // change the location using the variables returned from the API
-			    longitudediv.html('Longitude: '+longitude);
-			    lattitudediv.html('Latitude: '+latitude);
+			var lattitudediv = jQuery('.lattitude');
+			latitude = position.coords.latitude;
+			longitude  = position.coords.longitude;
+			// change the location using the variables returned from the API
+			longitudediv.html('Longitude: '+longitude);
+			lattitudediv.html('Latitude: '+latitude);
 	    
 		}
-
 		window.setInterval(function(){
   			initiate_geolocation();
-  			
 		}, 3000);
-
-
     </script>
   </head>
   <body>
